@@ -227,7 +227,7 @@
         hitmen = Math.trunc(hitmen).toLocaleString();
         thugs = Math.trunc(thugs).toLocaleString();
         m_needed = Math.trunc(m_needed).toLocaleString();
-        putout = Math.trunc(putout).toLocaleString();
+        putout = Math.trunc(putout).toLocaleString().replace(/\./g, "");
 
         document.getElementById("specialists").innerHTML = specialists;
         document.getElementById("hitmen").innerHTML = hitmen;
